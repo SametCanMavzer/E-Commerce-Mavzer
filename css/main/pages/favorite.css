@@ -1,0 +1,150 @@
+.favorite-page {
+    margin: 60px 0;
+}
+
+.favorite-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.favorite-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.favorite-header i {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.favorite-page .favorite-title {
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+
+.favorite-item {
+    display: flex;
+    padding: 20px;
+    column-gap: 10px;
+    border: 2px double #dee0ea;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.favorite-item:hover {
+    box-shadow: 3px 3px 10px #7a7a7a;
+
+}
+
+.favorite-item .favorite-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    border-radius: 5px;
+    border: 1px solid #dee0ea;
+
+
+}
+
+.favorite-item .favorite-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex: 2;
+}
+
+.favorite-item .favorite-info h4 {
+    font-size: 20px;
+}
+
+
+
+.favorite-price {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.favorite-price-item {
+    font-weight: 500;
+    color: #dc3545;
+    font-size: 20px;
+}
+
+.favorite-sku {
+    color: #7a7a7a;
+}
+
+.favorite-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    transition: all .5s ease;
+    flex: 1;
+}
+
+.favorite-action button {
+    background-color: transparent;
+    border: none;
+
+}
+
+.favorite-action i {
+    font-size: 25px;
+    margin: 5px;
+    pointer-events: none;
+}
+
+.favorite-action i:hover {
+    color: indigo;
+
+}
+
+
+/* responsive */
+
+@media (max-width: 992px) {
+    .favorite-item {
+        padding: 10px;
+    }
+
+    .favorite-item .favorite-info {
+        padding: 0;
+    }
+
+    .favorite-price-item {
+
+        font-size: 16px;
+    }
+
+    .favorite-item .favorite-info h4 {
+        font-size: 18px;
+    }
+
+    .favorite-item .favorite-picture {
+        width: 80px;
+    }
+
+    .favorite-action {
+        column-gap: 5px;
+    }
+
+    .favorite-action i {
+        font-size: 16px;
+        margin: 5px;
+        pointer-events: none;
+    }
+
+}
